@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study Js</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div id="TelaBemVindo">
+      <h1><span>B</span>em <span>V</span>inda(o) ao</h1>
+      <h1><span>Q&A</span></h1>
+      <p>Qual é o seu nome?</p>
+      <input type="text" id="nomeJogador" name="nomeJogador" required />
+      <input
+        type="submit"
+        id="botaoComecar"
+        value="Começar"
+        onclick="enviarNome()"
+      />
+    </div>
+
+    <div id="TelaEscolhaTema" style="display: none">
+        <h1><span>S</span>eja <span></span>B</span>em <span>V</span>indo<div id="nomeBemVindo"></div></h1>
+        <p><bold>Escolha um tema:</bold></p>
+        <input
+        type="button"
+        id="opcao1"
+        value="Tecnologia"
+        onclick="perguntasTecnologia()"
+    />
+
+        <input
+        type="button"
+        id="opcao2"
+        value="História"
+        onclick="perguntasHistoria()"
+    />
+
+    </div>
+
+    <div id="TecnologiaQ1" style="display: none">
+        <p>Qual das linguagens abaixo roda na JVM?</p>
+        <form>
+            <input type="button" value="Java" onclick="proximaTela(true)">
+            <input type="button" value="JavaScript" onclick="proximaTela()">
+            <input type="button" value="Python" onclick="proximaTela()">
+            <input type="button" value="C++" onclick="proximaTela()">
+        </form>
+    </div>
+
+    <div id="TecnologiaQ2" style="display: none">
+        <p>Quantas bits possui um endereço IP versão 4?</p>
+        <form>
+            <input type="button" value="32 bits" onclick="proximaTela(true)">
+            <input type="button" value="64 bits" onclick="proximaTela()">
+            <input type="button" value="128 bits" onclick="proximaTela()">
+            <input type="button" value="2 Bytes" onclick="proximaTela()">
+        </form>
+    </div>
+
+    <div id="TecnologiaQ3" style="display: none">
+        <p>O que significa a sigla SPA?</p>
+        <form>
+            <input type="button" value="Show Page Area" onclick="proximaTela()">
+            <input type="button" value="Singleton Procedural Analysis" onclick="proximaTela()">
+            <input type="button" value="Single-Page Aplication" onclick="proximaTela(true)">
+            <input type="button" value="Shortest Path Algorithm" onclick="proximaTela()">
+        </form>
+
+
+    </div>
+
+    <div id="HistoriaQ1" style="display: none">
+        <p>Qual foi ano que terminou a Segunda Guerra Mundial?</p>
+        <form>
+            <input type="button" value="1933" onclick="proximaTela()">
+            <input type="button" value="1945" onclick="proximaTela(true)">
+            <input type="button" value="2010" onclick="proximaTela()">
+            <input type="button" value="1839" onclick="proximaTela()">
+        </form>
+    </div>
+
+    <div id="HistoriaQ2" style="display: none">
+        <p>Qual o nome do rio que banha o Egito?</p>
+        <form>
+            <input type="button" value="Nilo" onclick="proximaTela(true)">
+            <input type="button" value="Amazonas" onclick="proximaTela()">
+            <input type="button" value="Leão" onclick="proximaTela()">
+            <input type="button" value="Tigre" onclick="proximaTela()">
+        </form>
+    </div>
+
+    <div id="HistoriaQ3" style="display: none">
+        <p>Como se chama o túmulo dos faraós?</p>
+        <form>
+            <input type="button" value="Amon" onclick="proximaTela()">
+            <input type="button" value="Caixa" onclick="proximaTela()">
+            <input type="button" value="Sarcofago" onclick="proximaTela(true)">
+            <input type="button" value="Vaso" onclick="proximaTela()">
+        </form>
+
+
+    </div>
+
+
+
+
+
+    <script src="app.js"></script>
+  </body>
+</html>
